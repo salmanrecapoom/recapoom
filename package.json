@@ -2,6 +2,11 @@
   "name": "recapoom",
   "version": "1.0.0",
   "description": "Nostalgic Social Network",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salmanrecapoom/recapoom"
+  },
+
   "main": "recapoom.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
