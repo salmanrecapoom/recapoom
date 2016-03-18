@@ -1,12 +1,12 @@
 {
-  "name": "meadowlark",
+  "name": "recapoom",
   "version": "1.0.0",
   "description": "Nostalgic Social Network",
   "main": "recapoom.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Salman Lari",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
