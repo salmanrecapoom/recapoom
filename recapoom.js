@@ -21,6 +21,37 @@ app.set('port', process.env.PORT || 3000);
 
 app.use(express.static(__dirname + '/public'));
 
+/*function salman (req,res,next)
+{
+	var hamza = {};
+hamza.salman='love';
+console.log('ja,za');
+req.data= hamza;
+next();
+}
+
+app.get('/user/:username', function(req,res,next){salman(req,res,next)}, function(req,res,next){ console.log(req.query); console.log('lalal'); 
+	console.log(req.params.username);
+	if(req.params.username=='hamza' || req.params.username=='salman'){
+		return res.send('authenticated');
+	}else{
+		res.send('not authenticated');
+	}
+	res.send(req.query);
+
+});
+
+*/
+
+//app.get('/', function(req,res,next){salman(req,res,next)}, function(req,res,next){ console.log(req.query); console.log('lalal'); res.send(req.query);});
+
+// app.get('/', function (req, res, next) {
+//   console.log('ID:');
+//   next();
+// }, function (req, res, next) {
+//   res.send('User Info');
+// });
+
 app.get('/', function(req, res){
 	res.render('home');
 });
