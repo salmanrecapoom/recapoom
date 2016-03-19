@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express();
 
-var fortune = require('./lib/fortune.js')
+var fortune = require('./lib/fortune.js');
 /*var fortunes = [
 		"Conquer your fears or they will conquer you.",
 		"Rivers need springs.",
@@ -20,6 +20,8 @@ var handlebars = require('express-handlebars')
 app.set('port', process.env.PORT || 3000);
 
 app.use(express.static(__dirname + '/public'));
+
+//if( app.thing === null ) console.log( 'bleat!' );
 
 /*function salman (req,res,next)
 {
@@ -52,12 +54,25 @@ app.get('/user/:username', function(req,res,next){salman(req,res,next)}, functio
 //   res.send('User Info');
 // });
 
+app.use(function(req, res, next){
+	res.locals.showTests = app.get('env') !== 'production' && req.query.test === '1';
+	next();
+});
+
 app.get('/', function(req, res){
 	res.render('home');
 });
 
 app.get('/about', function(req, res){
 	res.render('about', { fortune: fortune.getFortune() });
+});
+
+app.get('/nostalgia-section/era', function(req, res){
+	res.render('nostalgia-section/era');
+});
+
+app.get('/nostalgia-section/request-for-post', function(req, res){
+	res.render('nostalgia-section/request-for-post');
 });
 
 // 404 catch-all handler (middleware)
