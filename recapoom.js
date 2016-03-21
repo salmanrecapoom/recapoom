@@ -23,6 +23,8 @@ app.use(express.static(__dirname + '/public'));
 
 app.disable('x-powered-by');
 
+app.set('view cache', true);
+
 //if( app.thing === null ) console.log( 'bleat!' );
 
 /*function salman (req,res,next)
