@@ -13,12 +13,19 @@
   "author": "Salman Lari",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4",
-    "express-handlebars": "^3.0.0"
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "errorhandler": "^1.4.3",
+    "express": "~4.13.4",
+    "express-handlebars": "~3.0.0",
+    "method-override": "^2.3.5",
+    "moment": "^2.12.0",
+    "mongodb": "^2.1.16",
+    "morgan": "^1.7.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "grunt": "^0.4.5",
+    "grunt": "^1.0.1",
     "grunt-cafe-mocha": "^0.1.13",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-exec": "^0.4.6",

@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+body {
+    background-image: url(../img/openingbackgroundimage.png);
+    background-repeat: repeat-x;
+    background-size:     cover;                      /* <------ */
+    /*background-position: center; */ 
+    text-align: center;
+}
+header {
+    width: 100%;
+    font-family: wendy;
+    overflow: hidden;
+    text-align: center;
+}
+header p {
+    float: left;
+    color: white;
+}
+
+header #appicons {
+    display: block;
+    float: right;
+}
+#appicons p {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*header #controls {
+    display: inline-block;
+}
+#controls p {
+    display: inline-block;
+    font-size: 20px;
+}*/
+footer {
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}
